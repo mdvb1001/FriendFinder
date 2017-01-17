@@ -217,25 +217,32 @@
 
       $.get(currentURL + "/api/friends", function(bestmatch) {
         var differenceArray = [];
+        var miniArray = [];
+        var sum = 0;
+        var sumArray = [];
+        var totalDifference;
         for (var i = 0; i < bestmatch.length; i++) {
           console.log(bestmatch[i].scores);
           for (var j = 0; j < bestmatch[i].scores.length; j++) {
             var difference = Math.abs(parseInt(bestmatch[i].scores[j]) - parseInt(userData.scores[j]));
             console.log('difference :' + difference);
             differenceArray.push(difference);
-            console.log('differenceArray :' + differenceArray);
-            console.log('This is IT[0]: ' + differenceArray[j]);
-            if (j < 10) {
-              var sum = differenceArray.reduce(function(a, b) {
-                return a + b;
-              }, 0);
-              console.log('SUM' + sum);
-              count++;
-            } else {
-            	return false; 
-            }
           }
         }
+        while (differenceArray.length - 10) {
+            miniArray = differenceArray.splice(0, 10);
+            console.log("MiniArray: " + miniArray);
+            sum = miniArray.reduce(function(a, b) {
+              result = a + b;
+              return result;
+            }, 0);
+            console.log('SUM: ' + sum);
+        	sumArray.push(sum);
+        }
+        	console.log('sumArray: ' + sumArray);
+        totalDifference = Math.min(sumArray); 
+        console.log('total Difference: ' + totalDifference);
+        console.log('differenceArray :' + differenceArray);
 
         console.log(bestmatch[1].name);
         // Grab the result from the AJAX post so that the best match's name and photo are displayed.
