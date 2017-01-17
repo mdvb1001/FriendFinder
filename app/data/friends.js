@@ -1,3 +1,5 @@
+var friendsArray =
+
 [{
     "name": "Ahmed",
     "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
@@ -26,4 +28,6 @@
     "name": "SlothSpirit",
     "photo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJ-EYirKMZJZtK17VfRWG-C8BCoelVtt2jGq16KxuqXB0i7Peevg",
     "scores": ["1", "5", "5", "5", "5", "1", "1", "1", "1", "1"]
-}]
+}];
+
+module.exports = friendsArray;
