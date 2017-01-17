@@ -218,9 +218,13 @@
       $.get(currentURL + "/api/friends", function(bestmatch) {
         var differenceArray = [];
         var miniArray = [];
-        var sum = 0;
+        var sum = miniArray.reduce(function(a, b) {
+              result = a + b;
+              return result;
+            }, 0);
         var sumArray = [];
         var totalDifference;
+        var indexMatch;
         for (var i = 0; i < bestmatch.length; i++) {
           console.log(bestmatch[i].scores);
           for (var j = 0; j < bestmatch[i].scores.length; j++) {
@@ -232,22 +236,22 @@
         while (differenceArray.length - 10) {
             miniArray = differenceArray.splice(0, 10);
             console.log("MiniArray: " + miniArray);
-            sum = miniArray.reduce(function(a, b) {
-              result = a + b;
-              return result;
-            }, 0);
+            sum(); 
             console.log('SUM: ' + sum);
         	sumArray.push(sum);
         }
         	console.log('sumArray: ' + sumArray);
-        totalDifference = Math.min(sumArray); 
+        totalDifference = Math.min.apply(null, sumArray); 
         console.log('total Difference: ' + totalDifference);
         console.log('differenceArray :' + differenceArray);
 
-        console.log(bestmatch[1].name);
+        indexMatch = sumArray.indexOf(totalDifference);
+        console.log('IndexMatch: ' + indexMatch);
+
+        console.log(bestmatch[indexMatch].name);
         // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-        $("#matchName").text(bestmatch[1].name);
-        $('#matchImg').attr("src", bestmatch[1].photo);
+        $("#matchName").text(bestmatch[indexMatch].name);
+        $('#matchImg').attr("src", bestmatch[indexMatch].photo);
 
         // Show the modal with the best match 
         $("#resultsModal").modal('toggle');
