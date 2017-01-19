@@ -15,7 +15,7 @@ var friendsArray =
 }, {
     "name": "Louis T. Delia",
     "photo": "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
-    "scores": ["3", "3", "4", "2", "2", "1", "3", "2", "2", "3"]
+    "scores": ["1", "1", "1", "2", "2", "1", "1", "2", "1", "5"]
 }, {
     "name": "Lou Ritter",
     "photo": "https://m.facebook.com/photo.php?fbid=10208500699025296&id=1542229019&set=a.1549418665704.77596.1542229019&source=11",
