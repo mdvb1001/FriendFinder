@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <title>FriendFinder</title>
   <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/slate/bootstrap.min.css" />
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <!-- Font Awesome Glyphicons -->
@@ -17,9 +18,8 @@
 
 <body>
   <div class="container">
-    <h2>Survey Questions</h2>
+    <h1>The Love Survey</h1>
     <hr>
-    <form class="form" id="questionnaire">
       <h3><strong>About You</strong></h3>
       <h4>Name (Required)</h4>
       <input type="text" name="" id="name" class="form-control" required>
@@ -27,7 +27,7 @@
       <input type="text" name="" id="photo" class="form-control" required>
       <hr>
       <h3><strong>Question 1</strong></h3>
-      <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+      <h4>You find unpredictable situations exhilarating.</h4>
       <select data-placeholder="" class="chosen-select" id="q1">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -37,7 +37,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3><strong>Question 2</strong></h3>
-      <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+      <h4>You have a very wide range of interests.</h4>
       <select data-placeholder="" class="chosen-select" id="q2">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -47,7 +47,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3><strong>Question 3</strong></h3>
-      <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+      <h4>You are more optimistic than most people.</h4>
       <select data-placeholder="" class="chosen-select" id="q3">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -57,7 +57,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3><strong>Question 4</strong></h3>
-      <h4>You rarely do something just out of sheer curiosity.</h4>
+      <h4>You get restless if you have to stay home for any length of time.</h4>
       <select data-placeholder="" class="chosen-select" id="q4">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -67,7 +67,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3><strong>Question 5</strong></h3>
-      <h4>People can rarely upset you.</h4>
+      <h4>Your friends would say that you are very curious.</h4>
       <select data-placeholder="" class="chosen-select" id="q5">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -77,7 +77,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3><strong>Question 6</strong></h3>
-      <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+      <h4>On your time off, you like to be free to do whatever looks fun.</h4>
       <select data-placeholder="" class="chosen-select" id="q6">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -87,7 +87,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3><strong>Question 7</strong></h3>
-      <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+      <h4>You think consistent routines keep life orderly and relaxing.</h4>
       <select data-placeholder="" class="chosen-select" id="q7">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -97,7 +97,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3><strong>Question 8</strong></h3>
-      <h4>You rarely get carried away by fantasies and ideas.</h4>
+      <h4>You enjoy planning way ahead.</h4>
       <select data-placeholder="" class="chosen-select" id="q8">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -107,7 +107,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3><strong>Question 9</strong></h3>
-      <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+      <h4>Taking care of your possessions is a high priority for you.</h4>
       <select data-placeholder="" class="chosen-select" id="q9">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -117,7 +117,7 @@
         <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3><strong>Question 10</strong></h3>
-      <h4>You feel more energetic after spending time with a group of people.</h4>
+      <h4>You tend to be cautious, but not fearful.</h4>
       <select data-placeholder="" class="chosen-select" id="q10">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -128,14 +128,14 @@
       </select>
       <br>
       <br>
-      <!-- Submit Button -->
-      <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
+      <br>
+      <!-- Submit Button btn-lg btn-block -->
+      <button type="submit" class="btn btn-danger btn-lg" id="submit"><span class="glyphicon glyphicon-heart"></span> Submit Your Love
       </button>
-    </form>
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/mdvb1001">GitHub Repo</a></p>
       </div>
     </footer>
   </div>
@@ -146,11 +146,11 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h2 class="modal-title"><strong>Best Match</strong></h2>
+          <h2 class="modal-title"><strong>BEST MATCH</strong></h2>
         </div>
         <div class="modal-body">
-          <h2 id="matchName"></h2>
-          <img id="matchImg" src="" alt="">
+          <h3 id="matchName"></h3>
+          <img id="matchImg" width="300" src="" alt="">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -224,33 +224,34 @@
         var totalDifference;
         var indexMatch;
         for (var i = 0; i < bestmatch.length; i++) {
-          console.log(bestmatch[i].scores);
+          // console.log(bestmatch[i].scores);
           for (var j = 0; j < bestmatch[i].scores.length; j++) {
             var difference = Math.abs(parseInt(bestmatch[i].scores[j]) - parseInt(userData.scores[j]));
-            console.log('difference :' + difference);
+            // console.log('difference :' + difference);
             differenceArray.push(difference);
           }
         }
         while (differenceArray.length - 10) {
           miniArray = differenceArray.splice(0, 10);
-          console.log("MiniArray: " + miniArray);
-          sum = miniArray.reduce(function(a, b) {
-            result = a + b;
+          // console.log("MiniArray: " + miniArray);
+          sum = miniArray.reduce(function(sum, element) {
+            result = sum + element;
             return result;
           }, 0);
-          console.log('SUM: ' + sum);
+          // console.log('SUM: ' + sum);
           sumArray.push(sum);
         }
-        console.log('sumArray: ' + sumArray);
+        // console.log('sumArray: ' + sumArray);
         totalDifference = Math.min.apply(null, sumArray);
-        console.log('total Difference: ' + totalDifference);
-        console.log('differenceArray :' + differenceArray);
+        // console.log('total Difference: ' + totalDifference);
+        // console.log('differenceArray :' + differenceArray);
 
         indexMatch = sumArray.indexOf(totalDifference);
-        console.log('IndexMatch: ' + indexMatch);
+        // console.log('IndexMatch: ' + indexMatch);
 
-        console.log(bestmatch[indexMatch].name);
+        // console.log(bestmatch[indexMatch].name);
         // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+
         $("#matchName").text(bestmatch[indexMatch].name);
         $('#matchImg').attr("src", bestmatch[indexMatch].photo);
 
@@ -269,6 +270,7 @@
         resetChosen("q8");
         resetChosen("q9");
         resetChosen("q10");
+
 
         function resetChosen(id) {
           $('#' + id)

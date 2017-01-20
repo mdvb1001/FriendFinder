@@ -1,33 +1,33 @@
 var friendsArray =
 
 [{
-    "name": "Ahmed",
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    "scores": ["5", "1", "4", "4", "5", "1", "2", "5", "4", "1"]
+    "name": "Joseph Brenner",
+    "photo": "http://i.dailymail.co.uk/i/pix/2013/08/29/article-2405475-1B8389EE000005DC-718_634x550.jpg",
+    "scores": ["4", "2", "4", "1", "5", "4", "4", "5", "1", "1"]
 }, {
-    "name": "Jacob Deming",
-    "photo": "https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
-    "scores": ["4", "2", "5", "1", "3", "2", "2", "1", "3", "2"]
+    "name": "Leon Bullet",
+    "photo": "https://b.fastcompany.net/multisite_files/fastcompany/imagecache/slideshow_large/slideshow/2014/05/3030752-slide-s-photo2.jpg",
+    "scores": ["3", "3", "5", "2", "1", "2", "5", "1", "3", "2"]
 }, {
-    "name": "Jeremiah Scanlon",
+    "name": "Ashley Dubois",
     "photo": "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
-    "scores": ["5", "2", "2", "2", "4", "1", "3", "2", "5", "5"]
+    "scores": ["2", "2", "3", "2", "3", "1", "4", "2", "4", "5"]
 }, {
-    "name": "Louis T. Delia",
-    "photo": "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
-    "scores": ["1", "1", "1", "2", "2", "1", "1", "2", "1", "5"]
+    "name": "Trevor Manner",
+    "photo": "http://www.hvac2000.com/wp-content/uploads/2016/05/1464173989_Profile-Pictures.png",
+    "scores": ["2", "4", "2", "2", "4", "1", "2", "1", "1", "4"]
 }, {
-    "name": "Lou Ritter",
-    "photo": "https://m.facebook.com/photo.php?fbid=10208500699025296&id=1542229019&set=a.1549418665704.77596.1542229019&source=11",
-    "scores": ["4", "3", "4", "1", "5", "2", "5", "3", "1", "4"]
+    "name": "Zach Young",
+    "photo": "http://images.freeimages.com/images/previews/51f/profile-1439243.jpg",
+    "scores": ["1", "2", "2", "1", "4", "3", "4", "4", "2", "5"]
 }, {
-    "name": "Jordan Biason",
-    "photo": "https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/12741971_10205764267089153_4212986785721953092_n.jpg?oh=4e18265f7d380167223a97fbd7eba278&oe=57B78445",
-    "scores": ["4", "4", "2", "3", "2", "2", "3", "2", "4", "5"]
+    "name": "Jamie Soul",
+    "photo": "http://images.freeimages.com/images/previews/7d6/troy-looking-out-window-1499133.jpg",
+    "scores": ["5", "1", "4", "1", "2", "3", "4", "1", "5", "2"]
 }, {
-    "name": "SlothSpirit",
-    "photo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJ-EYirKMZJZtK17VfRWG-C8BCoelVtt2jGq16KxuqXB0i7Peevg",
-    "scores": ["1", "5", "5", "5", "5", "1", "1", "1", "1", "1"]
+    "name": "Howard Blake",
+    "photo": "http://www.binarytradingforum.com/core/image.php?userid=27&dateline=1355305878",
+    "scores": ["1", "3", "4", "5", "4", "3", "1", "2", "2", "3"]
 }];
 
 module.exports = friendsArray;
