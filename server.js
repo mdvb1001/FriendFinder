@@ -15,9 +15,6 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 require('./app/routing/apiRoutes.js')(app);
-// This is like doing this: 
-// var apiRoutesFn = require("./ap....")
-// apiRoutesFn(app);
 require('./app/routing/htmlRoutes.js')(app);
 
 
